@@ -20,7 +20,7 @@ With Node installed:
 
 2.  Open the ".env" in the same folder you extracted the repository, and insert a valid Github API token where indicated, removing the angle brackets afterward.  
 
-3.  Open a terminal and navigate to the folder that it was extracted to, then do the following:
+3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, then do the following:
 
 ```sh-session
 $ npm install -g rtcodetest
