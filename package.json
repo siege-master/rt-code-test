@@ -1,0 +1,61 @@
+{
+  "name": "rtcodetest",
+  "description": "CLI to retrieve information from the Github API and display it in a table.",
+  "version": "0.0.0",
+  "author": "CJ Fanelli",
+  "bin": {
+    "rtcodetest": "./bin/run"
+  },
+  "bugs": {
+    "url": "https://github.com/siege-master/ideal-memory/issues"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.14.0",
+    "@oclif/plugin-help": "^2.2.3",
+    "ascii-table": "0.0.9",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "github-api": "^3.3.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.5",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/siege-master/ideal-memory",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "rtcodetest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siege-master/ideal-memory.git"
+  },
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
