@@ -1,7 +1,7 @@
 rtcodetest
 ==========
 
-CLI to retrieve information from the Github API and display it in a table.
+CLI designed to meet the requirements of the Realtruck Back-End Dev Test ([Found Here](https://github.com/AutoCustoms/back-end-dev-test)).
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/rtcodetest.svg)](https://npmjs.org/package/rtcodetest)
@@ -12,7 +12,7 @@ CLI to retrieve information from the Github API and display it in a table.
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-# Usage
+# Installation
 <!-- usage -->
 ```sh-session
 $ npm install -g rtcodetest
