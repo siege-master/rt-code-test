@@ -8,10 +8,6 @@ This CLI is designed to meet the requirements of the Realtruck Back-End Dev Test
 [![Downloads/week](https://img.shields.io/npm/dw/rtcodetest.svg)](https://npmjs.org/package/rtcodetest)
 [![License](https://img.shields.io/npm/l/rtcodetest.svg)](https://github.com/siege-master/ideal-memory/blob/master/package.json)
 
-<!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
 # Installation
 
 This is a Node CLI, which has been tested on Node 12.
@@ -24,22 +20,22 @@ With Node installed:
 
 2.  Open the ".env" in the same folder you extracted the repository, and insert a valid Github API token where indicated, removing the angle brackets afterward.  
 
-3.  
+3.  Open a terminal and navigate to the folder that it was extracted to, then do the following:
 
-<!-- usage -->
 ```sh-session
 $ npm install -g rtcodetest
-$ rtcodetest COMMAND
-running command...
-$ rtcodetest (-v|--version|version)
-rtcodetest/0.0.0 win32-x64 node-v12.13.1
-$ rtcodetest --help [COMMAND]
-USAGE
-  $ rtcodetest COMMAND
-...
+```
+4. Then you can run rtcodetest by including the -u flag followed by a valid Github user name
+
+```sh-session
+$ rtcodetest -u autocustoms
+```
+To get additional information about other flags that can be run at startup use the -h flag
+
+```sh-session
+$ rtcodetest -h
 ```
 <!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+# Commands
+
