@@ -1,26 +1,24 @@
 const GitHub = require('github-api')
 require('.')
-
-//Receives api-token for Github Rest API v3, as well as a github user name.
-//Flattens and splices data down to the 'name' and 'stargazers_count' fields 
-//before stringifying and returning it to index.js
+/**
+ * Receives api-token for Github Rest API v3, as well as a github user name.
+ * 
+ * @param {string} token - API Token to use with Github Rest API v3
+ * @param {string} user  - Github user name
+ * @returns {Promise<Array<*>>} 
+ */
 async function getGitHubData(token, user) {
-  let gh = new GitHub({
+  const gh = new GitHub({
     token: token,
   })
-  let data = {}
-  let dataArray = []
-  let leanObject = {}
-  let me = gh.getUser(user)
-  let repos = await me.listRepos()
-  data.repos = repos.data
-  dataArray = data
-  dataArray = Object.entries(dataArray)
-  dataArray = dataArray.flat(2)
-  dataArray = dataArray.splice(1)
-  leanObject = JSON.stringify(dataArray, ['name', 'stargazers_count'])
-
-  return leanObject
+  const me = gh.getUser(user)
+  const repos = await me.listRepos()
+  return repos.data.map((repo) => {
+    return {
+      name : repo.name,
+      stargazers_count : repo.stargazers_count,
+    }
+  })
 }
-
 module.exports = getGitHubData
+
