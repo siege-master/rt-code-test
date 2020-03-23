@@ -10,7 +10,7 @@ This CLI is designed to meet the requirements of the Realtruck Back-End Dev Test
 
 # Installation
 
-This is a Node CLI, which has been tested on Node 12.
+This is a Node CLI, which has been tested on Node 12, and is available through the [npm registry](https://www.npmjs.com).
 
 If you do not have Node 12+ installed, download it [Here](https://nodejs.org/en/download/) first, and follow the instructions for installation.
 
@@ -20,12 +20,14 @@ With Node installed:
 
 2.  Open the ".env" in the same folder you extracted the repository, and insert a valid Github API token where indicated, removing the angle brackets afterward.  
 
-3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, then do the following:
+3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, and run the following command:
 
 ```sh-session
-$ npm install -g rtcodetest
+$ npm install rtcodetest --save
 ```
-4. Then you can run rtcodetest by including the -u flag followed by a valid Github user name
+4. Run rtcodetest by including the -u flag followed by a valid Github user name
+
+Example:
 
 ```sh-session
 $ rtcodetest -u autocustoms
@@ -55,6 +57,8 @@ Querying Stargazers for autocustoms from Github
 '---------------------------------------------------'
 ```
 
+
+#Flags
 To get additional information about other flags that can be run at startup use the -h flag
 
 ```sh-session
