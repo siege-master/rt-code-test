@@ -22,13 +22,13 @@ With Node installed:
 
 3.  Rename ".env-example" to ".env".  
 
-3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, and run the following command:
+4.  Open a terminal or command prompt and navigate to the folder that it was extracted to, and run the following command:
 
 ```sh-session
 $ npm install rtcodetest
 ```
 
-4. Run npm link to enable the shortcut
+5. Run npm link to enable the shortcut
 
 ```sh-session
 $ npm link
