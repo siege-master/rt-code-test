@@ -26,7 +26,11 @@ With Node installed:
 $ npm install rtcodetest
 ```
 
-That's it!
+4. Run npm link to enable the shortcut
+
+```sh-session
+$ npm link
+```
 
 ## Features
 
