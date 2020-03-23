@@ -29,13 +29,46 @@ $ npm install -g rtcodetest
 
 ```sh-session
 $ rtcodetest -u autocustoms
+
+Querying Stargazers for autocustoms from Github       
+.---------------------------------------------------. 
+|                    autocustoms                    | 
+|---------------------------------------------------| 
+|         Repository Name         | Stargazer Count | 
+|---------------------------------|-----------------| 
+| front-end-dev-test              |               4 | 
+| back-end-dev-test               |               1 | 
+| amazon-mws-merchant-fulfillment |               0 | 
+| yotpo-php                       |               0 | 
+| laravel-traceable               |               0 | 
+| qa-engineer-test                |               0 | 
+| laravel-sftp                    |               0 | 
+| fedex-tracking-api-wrapper      |               0 | 
+| amazon-mws-products             |               0 | 
+| yotpo-cli                       |               0 | 
+| ansible-cloudflare              |               0 | 
+| postcss-font-magician           |               0 | 
+| google-fonts-complete           |               0 | 
+| contentful-to-algolia           |               0 | 
+| netsuite-php                    |               0 | 
+| amazon-mws-orders               |               0 | 
+'---------------------------------------------------'
 ```
+
 To get additional information about other flags that can be run at startup use the -h flag
 
 ```sh-session
 $ rtcodetest -h
+
+ -a, --ascending  Sort table by ascending number of  
+                   stargazers
+
+  -h, --help       show CLI help
+
+  -u, --user=user  Name of user that will be sent to  
+                   the Github REST API v3 for querying
+  -v, --version    show CLI version
 ```
 <!-- usagestop -->
 
-# Commands
 
