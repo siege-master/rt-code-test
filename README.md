@@ -76,19 +76,15 @@ To get additional information about other flags that can be run at startup use t
 ```sh-session
 $ rtcodetest -h
 
- -a, --ascending  Sort table by ascending number of  
+ -a, --ascending   Sort table by ascending number of  
                    stargazers
 
-  -h, --help       show CLI help
+  -h, --help       Show CLI help
 
   -u, --user=user  Name of user that will be sent to  
                    the Github REST API v3 for querying
-  -v, --version    show CLI version
+  -v, --version    Show CLI version
 ```
-
-# People
-
-The original author is CJ Fanelli, with input from Chris Flint, and QA by Jenna Fanelli.
 
 # License
 
