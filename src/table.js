@@ -13,9 +13,13 @@ async function buildTable(user, data, sortAsc) {
     heading: ['Repository Name', 'Stargazer Count'],
     rows: [],
   })
-  data.forEach(element => {
+  if (!data){
+    return
+  } else { 
+    data.forEach(element => {
     table.addRow(element.name, element.stargazers_count) 
   })
+  }
   if (sortAsc) {
     table.sortColumn(1, function (a, b) {
       return a - b

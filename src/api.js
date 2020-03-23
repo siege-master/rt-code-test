@@ -13,7 +13,11 @@ async function getGitHubData(token, user) {
   })
   const me = gh.getUser(user)
   const repos = await me.listRepos()
-  return repos.data.map((repo) => {
+  if (repos.data.length < 1){
+ 
+    return console.log(`No public repositories found for user ${user}`)
+  }
+   return repos.data.map((repo) => {
     return {
       name : repo.name,
       stargazers_count : repo.stargazers_count,
