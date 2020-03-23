@@ -5,7 +5,7 @@ require('.')
  * 
  * @param {string} token - API Token to use with Github Rest API v3
  * @param {string} user  - Github user name
- * @returns {Promise<Array<*>>} 
+ * @returns {Promise<Array<*>>} - Returns an array of objects containing the names of repositories and their corresponding stargazer counts.
  */
 async function getGitHubData(token, user) {
   const gh = new GitHub({
