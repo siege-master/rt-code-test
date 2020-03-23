@@ -33,7 +33,7 @@ class RtcodetestCommand extends Command {
     //Pass the user name, object, and sorting flag to table.js 
     //which builds, sorts, and prints the table to the terminal.
     try {     
-      buildTable = await table(user, getData, flags.ascending)
+      await table(user, getData, flags.ascending)
     } 
     catch (error) {
       console.log('Error occurred while trying to build the table')
