@@ -23,7 +23,7 @@ With Node installed:
 3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, and run the following command:
 
 ```sh-session
-$ npm install rtcodetest --save
+$ npm install rtcodetest
 ```
 
 That's it!
