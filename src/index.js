@@ -16,7 +16,7 @@ class RtcodetestCommand extends Command {
     }
     this.log(`\r\nQuerying Stargazers for ${user} from Github...\r\n`)
     let getData
-       
+
     //Pass Github API token and user to getGitHubData in api.js
     //which returns an object to build the table from.
     try {
@@ -44,7 +44,7 @@ RtcodetestCommand.description = 'Queries the Github REST API v3 for a specific u
 RtcodetestCommand.flags = {
   version: flags.version({char: 'v'}),
   help: flags.help({char: 'h'}),
-  user: flags.string({char: 'u', description: 'Name of user that will be sent to the Github REST API v3 for querying'}),
+  user: flags.string({char: 'u', description: 'Name of user that will be sent to the Github REST API v3 for querying', required: true}),
   ascending: flags.boolean({char: 'a', description: 'Sort table by ascending number of stargazers', default: false}),
 }
 module.exports = RtcodetestCommand
