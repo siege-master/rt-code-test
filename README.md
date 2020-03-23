@@ -25,7 +25,17 @@ With Node installed:
 ```sh-session
 $ npm install rtcodetest --save
 ```
-4. Run rtcodetest by including the -u flag followed by a valid Github user name
+
+That's it!
+
+## Features
+
+  * Queries the Github API and quickly returns user-specific data on Repositories and Stargazers
+  * Outputs data in the terminal as an ASCII table.
+
+# Usage
+
+Run by including the -u flag followed by a valid Github user name
 
 Example:
 
@@ -58,8 +68,10 @@ Querying Stargazers for autocustoms from Github
 ```
 
 
-#Flags
-To get additional information about other flags that can be run at startup use the -h flag
+# Flags
+
+
+To get additional information about other flags that can be run at startup use the -h flag.  The output provides information on the other flags that can be used at the command line.
 
 ```sh-session
 $ rtcodetest -h
@@ -73,6 +85,11 @@ $ rtcodetest -h
                    the Github REST API v3 for querying
   -v, --version    show CLI version
 ```
-<!-- usagestop -->
 
+# People
 
+The original author is CJ Fanelli, with input from Chris Flint, and QA by Jenna Fanelli.
+
+# License
+
+[MIT](https://github.com/expressjs/express/blob/master/LICENSE)
