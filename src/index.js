@@ -14,15 +14,12 @@ class RtcodetestCommand extends Command {
       console.log ('A gitHub user name  must be included using the -u flag')
       return
     }
-    console.clear()
     this.log(`\r\nQuerying Stargazers for ${user} from Github...\r\n`)
     let getData
-    let buildTable
-    
+       
     //Pass Github API token and user to getGitHubData in api.js
     //which returns an object to build the table from.
     try {
-      console.clear()
       getData = await getGitHubData(process.env.API_TOKEN, user)
     }
     catch (error) {
