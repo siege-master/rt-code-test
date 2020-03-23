@@ -33,6 +33,7 @@ $ npm install rtcodetest
 ```sh-session
 $ npm link
 ```
+You should be ready to use the CLI!
 
 ## Features
 
