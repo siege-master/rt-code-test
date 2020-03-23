@@ -18,7 +18,9 @@ With Node installed:
 
 1.  Download this repository and extract it to the folder of your choosing.  
 
-2.  Open the ".env" in the same folder you extracted the repository, and insert a valid Github API token where indicated, removing the angle brackets afterward.  
+2.  Open the ".env-example" in the same folder you extracted the repository, and insert a valid Github API token where indicated, removing the angle brackets afterward.  Save and close the file.
+
+3.  Rename ".env-example" to ".env".  
 
 3.  Open a terminal or command prompt and navigate to the folder that it was extracted to, and run the following command:
 
